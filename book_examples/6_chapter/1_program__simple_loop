@@ -1,0 +1,72 @@
+count = 1
+while count <= 5:
+    print(count)
+    count += 1
+
+# Бесконечный цикл пока не нажмешь q
+'''
+# while True:
+#     stuff = input("String to capitalize [type q to quit]: ")
+#     if stuff == "q":
+#         break
+#     print(stuff.capitalizey())
+'''
+
+
+# Бесконечный цикл по не нажмеш q вычисляющий нечетный квадраты
+'''
+
+while True:
+    number = ''
+    value = input("Integer, please [q to quit]: ")
+    if value == 'q':
+        break
+
+    try:
+        number = int(value)
+        if number % 2 == 0:
+            continue
+        print(number, "squared is", number*number)
+    except Exception as e:
+        print("INTEGER PLEASE, DALBOEB!!")
+        continue
+
+'''
+
+# ex 3
+
+numbers = [1, 4, 5]
+position = 0
+while position < len(numbers):
+    number = numbers[position]
+    if number % 2 == 0:
+        print('Found even number', number)
+        break
+    position += 1
+else:  # break не вызываем
+    print("no even number found")
+
+
+# Итерирование по строке
+word = 'thud'
+offset = 0
+while offset < len(word):
+    print(word[offset])
+    offset += 1
+
+print('\n\n')
+# Прерывание
+for letter in word:
+    if letter == 'x':
+        print("EAK! An 'X'!")
+        break
+    print(letter)
+else:
+    print("No 'x' in there.")
+
+# range(начало, конец, шаг)
+for x in range(10, -1, -2):
+    print(x)
+
+# list
+print(list(range(2, -1, -1)))
