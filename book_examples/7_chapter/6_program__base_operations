@@ -1,0 +1,6 @@
+# append, insert, *, extend (+)
+
+marxes_2 = ['Grouncho', 'Chico', 'Harpo']
+
+marxes_2.append('Zeppo')
+print('marxes_2.append("element") =>', marxes_2)
