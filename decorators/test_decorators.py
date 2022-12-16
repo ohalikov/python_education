@@ -8,19 +8,19 @@
 
 
 def new_function(callback_function):
-    def wrapper():
+    def wrapper(value):
         print("this is wrapper logic")
-        callback_function()
+        callback_function(value)
     return wrapper
 
 
 # @new_function  # раскоментировать
-def test():
-    print("Hello")
+def test(value):
+    print(f"Hello {value}")
 
 
 # test()  # раскоментировать
 
 
 test = new_function(test)
-test()
+test("qq")
