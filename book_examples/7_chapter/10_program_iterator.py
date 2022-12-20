@@ -36,7 +36,18 @@ else:
 days = ['Monday', 'Tuesday', 'Wendsday']
 fruits = ['banana', 'orange', 'peach']
 drinks = ['coffee', 'tea', 'beer']
+deserts = ['tiramisu', 'ice cream', 'pie', 'pudding']
 
-for day, fruit, drink in zip(days, fruits, drinks):
-    print("day: => ", day, '\n', "fruit: => ",
-          fruit, '\n', "drinks: => ", drink, '\n')
+for day, fruit, drink, desert in zip(days, fruits, drinks, deserts):
+    print(day, ": eat", fruit, '- drink', drink, '- enjoy', desert)
+
+# Функция zip позволяет пройти по нескольким последовательностям
+# и создать кортежи из элементов с одинаковым смещением.
+
+english = 'Monday', 'Tuesday', 'Wednesday'  # tuple
+french = 'Lundi', 'Mardi', 'Mercredi'
+
+# Объединим с помощью zip()
+language_list = list(zip(english, french))
+language_dict = dict(zip(english, french))
+print(language_dict)
