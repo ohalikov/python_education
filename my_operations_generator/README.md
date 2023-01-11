@@ -1,6 +1,6 @@
-## HOW TO START
+# HOW TO START
 
-# install FASTAPI
+## install FASTAPI
 
     https://bobbyhadz.com/blog/python-no-module-named-fastapi
 
