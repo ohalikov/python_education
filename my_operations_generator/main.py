@@ -1,3 +1,4 @@
+from typing import Union
 from fastapi import FastAPI
 from operations_generator import get_generation_operations
 

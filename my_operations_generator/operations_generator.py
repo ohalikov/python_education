@@ -3,6 +3,8 @@ import pprint
 
 RANGE_NUMBERS = {'start_range': 0, 'end_range': 20}
 RANGE_NUMBERS_MULTIPLY = {'start_range': 0, 'end_range': 10}
+RANGE_NUMBERS_DIV = {'start_range': 1, 'end_range': 10}
+
 COUNT_EXAMPLES = 20
 
 
@@ -32,7 +34,7 @@ def multiply(a, b):
 
 def division(a, b):
     if b == 0:
-        b = get_new_value_not_equal_zero(RANGE_NUMBERS)
+        b = get_new_value_not_equal_zero(RANGE_NUMBERS_DIV)
     remainder = a % b
     return a//b, b, remainder
 
@@ -54,6 +56,11 @@ def get_left_and_right_operands(dict_range_numbers, operator):
                 RANGE_NUMBERS_MULTIPLY)
             operand_2 = get_random_value(
                 RANGE_NUMBERS_MULTIPLY)
+        elif operator == 'division':
+            operand_1 = get_random_value(
+                RANGE_NUMBERS)
+            operand_2 = get_random_value(
+                RANGE_NUMBERS_DIV)
         else:
             operand_1 = get_random_value(
                 dict_range_numbers)
