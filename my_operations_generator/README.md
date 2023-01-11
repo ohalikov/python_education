@@ -9,11 +9,11 @@
     cd my_operations_generator/
     uvicorn main:my_own_api --reload --port 8500
 
-# endpoint
+## endpoint
 
     http://127.0.0.1:8500/operations/20
 
-# Example JSON
+## Example JSON
 
 [
 {"left_operand":7,"right_operand":5,"operator":"division","result":1,"division_remainder":2},
